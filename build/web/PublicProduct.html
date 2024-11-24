@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .categories {
+            width: 20%;
+            padding: 10px;
+        }
+        .categories ul {
+            list-style: none;
+            padding: 0;
+        }
+        .categories li {
+            margin: 10px 0;
+        }
+        .categories button {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .products {
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 10px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+        .product img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+        .sale-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: red;
+            color: white;
+            padding: 5px;
+            font-size: 12px;
+        }
+        .product h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .price {
+            font-size: 16px;
+            color: #333;
+            margin: 5px 0;
+        }
+        .price.strike {
+            text-decoration: line-through;
+            color: #888;
+        }
+        .add-to-cart {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .pagination a {
+            padding: 10px;
+            margin: 5px;
+            text-decoration: none;
+            border: 1px solid #ddd;
+            color: #333;
+        }
+        .pagination a.active {
+            background-color: #28a745;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Categories Section -->
+        <div class="categories">
+            <button>Show Categories</button>
+            <ul>
+                <li><a href="#">ADIDAS</a></li>
+                <li><a href="#">GUCCI</a></li>
+                <li><a href="#">BURBERRY</a></li>
+                <li><a href="#">DOLCE & GABBANA</a></li>
+            </ul>
+        </div>
+
+        <!-- Products Section -->
+        <div class="products">
+            <div class="product">
+                <span class="sale-badge">Sale</span>
+                <img src="gucci-polo.jpg" alt="Áo Polo Gucci Jacquard Striped">
+                <h3>Áo Polo Gucci Jacquard Striped</h3>
+                <p class="price strike">$150.00</p>
+                <p class="price">$140.00</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="product">
+                <span class="sale-badge">Sale</span>
+                <img src="adidas-tennis.jpg" alt="Áo Polo Adidas Tennis">
+                <h3>Áo Polo Adidas Tennis</h3>
+                <p class="price strike">$168.00</p>
+                <p class="price">$150.00</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="product">
+                <span class="sale-badge">Sale</span>
+                <img src="gucci-logo-patch.jpg" alt="Áo Polo Gucci Logo-Patch Shirt">
+                <h3>Áo Polo Gucci Logo-Patch Shirt</h3>
+                <p class="price strike">$170.00</p>
+                <p class="price">$160.00</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="product">
+                <span class="sale-badge">Sale</span>
+                <img src="adidas-jacket.jpg" alt="Áo Khoác Lông Vũ Adidas">
+                <h3>Áo Khoác Lông Vũ Adidas</h3>
+                <p class="price strike">$200.00</p>
+                <p class="price">$170.00</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="product">
+                <span class="sale-badge">Sale</span>
+                <img src="gucci-cotton.jpg" alt="Áo Polo Gucci Cotton Polo">
+                <h3>Áo Polo Gucci Cotton Polo</h3>
+                <p class="price strike">$130.00</p>
+                <p class="price">$120.00</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="product">
+                <span class="sale-badge">Sale</span>
+                <img src="adidas-graphic.jpg" alt="Áo Phông Adidas Graphic Foil">
+                <h3>Áo Phông Adidas Graphic Foil</h3>
+                <p class="price strike">$140.00</p>
+                <p class="price">$130.00</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pagination Section -->
+    <div class="pagination">
+        <a href="#">Previous</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">Next</a>
+    </div>
+
+</body>
+</html>

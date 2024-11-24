@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <style>
+        /* Định dạng chung */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom:   
+ 10px;
+            border: 1px solid   
+ #ccc;
+        }
+
+        /* Định dạng nút */
+        input[type="text"]:disabled,
+        input[type="number"]:disabled {
+            background-color: #f2f2f2;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <h2>Product Details</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="Polo Gucci" disabled>
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="type" value="Shirt" disabled>
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" value="100" disabled>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" value="2" disabled>
+        <label for="status">Status</label>
+        <input type="text" id="status" name="status" value="Available" disabled>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" cols="50" disabled>Áo Polo Gucci Jacquard Striped Polo...</textarea>
+</body>
+</html>

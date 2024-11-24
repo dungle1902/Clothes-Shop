@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Danh sách sản phẩm</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 15px;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>   
+
+
+        <h2>Danh sách sản phẩm</h2>
+
+        <div>
+            <select>
+                <option>Status</option>
+            </select>
+            <select>
+                <option>Type</option>
+            </select>
+            <input type="text" placeholder="Tìm kiếm...">
+            <button>Tìm kiếm</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Loại</th>
+                    <th>Mô tả</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Trạng thái</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Polo Gucci Jacquard Striped</td>
+                    <td>Shirt</td>
+                    <td>Áo Polo Gucci Jacquard Striped Polo Shirt Phối Màu được làm từ chất vải Cotton thoáng mát mang lại cảm giác thoải mái cho người mặc.</td>
+                    <td>100</td>
+                    <td>2</td>
+                    <td>Inactive</td>
+                    <td><button>Detail</button> <button>Activate</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Polo Adidas Tennis</td>
+                    <td>Shirt</td>
+                    <td>Áo Polo Adidas Tennis Club GL5437 được làm từ chất liệu 100% polyester, mang lại sự thoải mái, thoáng mát cho người mặc.</td>
+                    <td>200</td>
+                    <td>5</td>
+                    <td>Active</td>
+                    <td><button>Detail</button> <button>Deactivate</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div>
+            <button>Back</button>
+            <button>1</button>
+            <button>2</button>
+            <button>99</button>
+            <button>100</button>
+        </div>
+
+    </body>
+</html>

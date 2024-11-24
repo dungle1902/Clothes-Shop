@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .header nav a:last-child {
+            margin-right: 0;
+        }
+
+        .header .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .search-bar input[type="text"] {
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 200px;
+            margin-right: 10px;
+        }
+
+        .header .search-bar button {
+            padding: 5px 10px;
+            font-size: 14px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .header .cart-logout {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .cart-logout button {
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        /* Main content */
+        .main-content {
+            display: flex;
+            padding: 30px;
+        }
+
+        .product-image {
+            width: 40%;
+            padding-right: 30px;
+        }
+
+        .product-image img {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .product-details {
+            width: 60%;
+        }
+
+        .product-details h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .product-details .price {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .product-details .price.strike {
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        .product-description {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .add-to-cart {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Fashion Clothes</div>
+        <nav>
+            <a href="#">Manager Account</a>
+            <a href="#">Manager Category</a>
+            <a href="#">Manager Product</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+        <div class="cart-logout">
+            <button>Cart</button>
+            <button>Logout</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Product Image -->
+        <div class="product-image">
+            <img src="../images/ao-polo.jpg" alt="Áo Polo Gucci Jacquard Striped">
+        </div>
+
+        <!-- Product Details -->
+        <div class="product-details">
+            <h1>Áo Polo Gucci Jacquard Striped</h1>
+            <p class="price strike">$150.00</p>
+            <p class="price">$140.00</p>
+            <p class="product-description">
+                Áo Polo Gucci Jacquard Striped Polo Shirt Phối Màu được làm từ chất vải Cotton thoáng mát mang lại cảm giác thoải mái cho người mặc. Form áo chuẩn đẹp, đường may tỉ mỉ, túi trong chi tiết. Áo mềm mịn, không nhăn, không xù, không phai màu. Hoa tiết kẻ ngang trên áo nhiều màu tạo điểm nhấn vô cùng độc đáo.
+            </p>
+            <button class="add-to-cart">Add to cart</button>
+        </div>
+    </div>
+
+</body>
+</html>
